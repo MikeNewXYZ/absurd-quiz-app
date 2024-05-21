@@ -3,9 +3,19 @@ import "@phosphor-icons/web/bold";
 import randomTheme from "./lib/random-theme";
 import fadeIn from "./lib/fade-in";
 import JSConfetti from "js-confetti";
+import nextSlide from "./lib/next-slide";
+import loading from "./slides/loading";
 
 const bodyEl = document.querySelector("body");
 const jsConfetti = new JSConfetti();
+
+// Button event listeners.
+document
+	.querySelector('[data-next-slide="loading"]')
+	.addEventListener("click", () => {
+		nextSlide("loading");
+		loading();
+	});
 
 // Page intro sequence.
 async function init() {
@@ -18,25 +28,4 @@ init();
 // When any button element is clicked run js confetti.
 [...document.querySelectorAll("button")].forEach((el) => {
 	el.addEventListener("click", () => jsConfetti.addConfetti());
-});
-
-// When button with "data-next-slide" attribute is clicked
-// get its slide value, then hide all slides that don't
-// match and show the one that does. Also change to
-// a random theme.
-[...document.querySelectorAll("[data-next-slide]")].forEach((el) => {
-	el.addEventListener("click", () => {
-		const nextSlideId = el.getAttribute("data-next-slide");
-
-		[...document.querySelectorAll("[data-slide]")].forEach((el) => {
-			const slideId = el.getAttribute("data-slide");
-
-			if (slideId === nextSlideId) {
-				el.style.display = "block";
-				randomTheme(bodyEl);
-			} else {
-				el.style.display = "none";
-			}
-		});
-	});
 });
