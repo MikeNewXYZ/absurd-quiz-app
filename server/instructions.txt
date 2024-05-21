@@ -1,0 +1,94 @@
+Create a absurd quiz with 5 questions.
+Each question should be funny and absurd without being offensive.
+A question should have 3 possible answers, 2 incorrect and 1 correct.
+The quiz data has to be formatted as a JSON like the following:
+
+{
+    "quiz": [
+        {
+            "question": "question 1",
+            "possible_answers": [
+                {
+                    "text": "possible answer text",
+                    "correct": true
+                },
+                                {
+                    "text": "possible answer text",
+                    "correct": false
+                },
+                                                {
+                    "text": "possible answer text",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "question 2",
+            "possible_answers": [
+                {
+                    "text": "possible answer text",
+                    "correct": true
+                },
+                                {
+                    "text": "possible answer text",
+                    "correct": false
+                },
+                                                {
+                    "text": "possible answer text",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "question 3",
+            "possible_answers": [
+                {
+                    "text": "possible answer text",
+                    "correct": true
+                },
+                                {
+                    "text": "possible answer text",
+                    "correct": false
+                },
+                                                {
+                    "text": "possible answer text",
+                    "correct": false
+                }
+            ]
+        },
+                {
+            "question": "question 4",
+            "possible_answers": [
+                {
+                    "text": "possible answer text",
+                    "correct": true
+                },
+                                {
+                    "text": "possible answer text",
+                    "correct": false
+                },
+                                                {
+                    "text": "possible answer text",
+                    "correct": false
+                }
+            ]
+        },
+                {
+            "question": "question 5",
+            "possible_answers": [
+                {
+                    "text": "possible answer text",
+                    "correct": true
+                },
+                                {
+                    "text": "possible answer text",
+                    "correct": false
+                },
+                                                {
+                    "text": "possible answer text",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

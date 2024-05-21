@@ -10,7 +10,7 @@ export default function nextSlide(nextSlideId) {
 		const slideId = el.getAttribute("data-slide");
 
 		if (slideId === nextSlideId) {
-			el.style.display = "block";
+			el.style.display = "";
 			randomTheme(bodyEl);
 		} else {
 			el.style.display = "none";
