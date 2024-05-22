@@ -9,7 +9,7 @@ export default async function loadingSlide() {
 	await wait(2000);
 	jsConfetti.addConfetti({ emojis: ["💫"] });
 
-	const response = await fetch("http://localhost:3000/", {
+	const response = await fetch(process.env.SERVER_LOCATION, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
