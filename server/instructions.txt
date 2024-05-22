@@ -1,13 +1,14 @@
 Create a absurd quiz with 5 questions.
 Each question should be funny and absurd without being offensive.
 A question should have 3 possible answers, 2 incorrect and 1 correct.
+In each answers array set 1 correct property to boolean true and the rest to false.
 The quiz data has to be formatted as a JSON like the following:
 
 {
     "quiz": [
         {
             "question": "question 1",
-            "possible_answers": [
+            "answers": [
                 {
                     "text": "possible answer text",
                     "correct": true
@@ -24,7 +25,7 @@ The quiz data has to be formatted as a JSON like the following:
         },
         {
             "question": "question 2",
-            "possible_answers": [
+            "answers": [
                 {
                     "text": "possible answer text",
                     "correct": true
@@ -41,7 +42,7 @@ The quiz data has to be formatted as a JSON like the following:
         },
         {
             "question": "question 3",
-            "possible_answers": [
+            "answers": [
                 {
                     "text": "possible answer text",
                     "correct": true
@@ -58,7 +59,7 @@ The quiz data has to be formatted as a JSON like the following:
         },
                 {
             "question": "question 4",
-            "possible_answers": [
+            "answers": [
                 {
                     "text": "possible answer text",
                     "correct": true
@@ -75,7 +76,7 @@ The quiz data has to be formatted as a JSON like the following:
         },
                 {
             "question": "question 5",
-            "possible_answers": [
+            "answers": [
                 {
                     "text": "possible answer text",
                     "correct": true

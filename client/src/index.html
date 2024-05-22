@@ -50,7 +50,69 @@
 					<i class="ph-bold ph-spiral text-[15rem] sm:text-[30rem]"></i>
 				</div>
 			</div>
+
+			<!-- SLIDE Quiz -->
+			<div
+				data-slide="quiz"
+				class="flex h-full w-full items-center justify-center pb-10 pt-6 sm:pb-0 sm:pt-0"
+				style="display: none"
+			>
+				<div
+					id="quiz-cards"
+					class="stack h-full w-full sm:h-[25rem] sm:w-[35rem]"
+				></div>
+			</div>
+
+			<!-- SLIDE Summary -->
+			<div
+				data-slide="summary"
+				class="flex h-full w-full items-center justify-center pb-10 pt-6 sm:pb-0 sm:pt-0"
+				style="display: none"
+			>
+				Summary
+			</div>
 		</main>
+
+		<!-- TEMPLATES -->
+		<template data-template="quiz-card">
+			<form
+				data-quiz-card
+				class="card h-full w-full border border-base-content bg-base-100 text-center"
+			>
+				<div class="card-body">
+					<h2 data-quiz-card-question class="card-title"></h2>
+					<div data-quiz-card-answers></div>
+				</div>
+				<div class="card-actions flex justify-center p-4">
+					<button
+						class="btn btn-primary w-full text-3xl font-black uppercase"
+						type="submit"
+					>
+						<div class="pb-0.5">submit</div>
+					</button>
+				</div>
+			</form>
+		</template>
+
+		<template data-template="quiz-card-answer">
+			<div class="form-control">
+				<label
+					data-quiz-answer-label
+					class="label cursor-pointer"
+					for="unique-id"
+				>
+					<span data-quiz-answer-text class="label-text text-left"></span>
+					<input
+						data-quiz-answer-input
+						id="unique-id"
+						type="radio"
+						name="question-0"
+						value="answer-0"
+						class="radio"
+					/>
+				</label>
+			</div>
+		</template>
 
 		<script type="module" src="/main.js"></script>
 	</body>

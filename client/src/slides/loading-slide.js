@@ -1,10 +1,11 @@
 import JSConfetti from "js-confetti";
 import nextSlide from "../lib/next-slide";
 import wait from "wait";
+import quizSlide from "./quiz-slide";
 
 const jsConfetti = new JSConfetti();
 
-export default async function loading() {
+export default async function loadingSlide() {
 	await wait(2000);
 	jsConfetti.addConfetti({ emojis: ["💫"] });
 
@@ -21,6 +22,8 @@ export default async function loading() {
 		window.quiz = quiz;
 
 		nextSlide("quiz");
+
+		quizSlide();
 	} else {
 		const error = await response.text();
 		alert(error);
