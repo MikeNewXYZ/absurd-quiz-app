@@ -9,12 +9,15 @@ export default async function loadingSlide() {
 	await wait(2000);
 	jsConfetti.addConfetti({ emojis: ["💫"] });
 
-	const response = await fetch("absurd-quiz-app-b9b73e87.railway.internal", {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
+	const response = await fetch(
+		"https://server-production-aeb7.up.railway.app",
+		{
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
 		},
-	});
+	);
 
 	if (response.ok) {
 		const { quiz } = await response.json();
