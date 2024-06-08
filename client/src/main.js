@@ -19,7 +19,7 @@ document
 
 // Page intro sequence.
 async function init() {
-	await randomTheme(bodyEl);
+	randomTheme(bodyEl);
 	await fadeIn(bodyEl);
 	await jsConfetti.addConfetti();
 }

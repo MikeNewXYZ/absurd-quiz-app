@@ -34,10 +34,6 @@ const themes = [
 ];
 
 export default function randomTheme(el) {
-	return new Promise((resolve) => {
-		const randomIndex = Math.floor(Math.random() * themes.length);
-		el.dataset.theme = themes[randomIndex];
-
-		resolve();
-	});
+	const randomIndex = Math.floor(Math.random() * themes.length);
+	el.dataset.theme = themes[randomIndex];
 }
