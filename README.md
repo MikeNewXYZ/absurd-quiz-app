@@ -5,6 +5,28 @@
 
 </br>
 
+## 💻 Installing
+
+```console
+> git clone https://github.com/MikeNewXYZ/absurd-quiz-app.git
+```
+
+### Front-end
+```console
+> cd client
+> npm i
+> npm run dev
+```
+
+### Back-end
+```console
+> cd server
+> npm i
+> npm run start
+```
+
+</br>
+
 ## About
 **URL:** https://absurd-quiz-app-production.up.railway.app/ <br>
 **Created by:** [Mike Newberry](https://github.com/MikeNewXYZ)
