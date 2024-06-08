@@ -1,8 +1,3 @@
----
-title: Absurd Quiz App
-author: Mike Newberry
----
-
 # Absurd Quiz App
 *A fun quiz app that generates quizzes on request with OpenAI.*
 
@@ -11,7 +6,7 @@ author: Mike Newberry
 </br>
 
 ## About
-**URL:** https://absurd-quiz-app-production.up.railway.app/
+**URL:** https://absurd-quiz-app-production.up.railway.app/ <br>
 **Created by:** [Mike Newberry](https://github.com/MikeNewXYZ)
 
 **_This project was created as part of an assignment for a coding course. The bulk of it was made quickly across 2 days. It uses HTML, Tailwind CSS, DaisyUI, JavaScript, OpenAI API, NodeJS and ExpressJS._**
