@@ -24,10 +24,14 @@
 						<div>absurd</div>
 						<div>quiz app</div>
 					</h1>
-					<p class="mt-4">
-						<div class="font-mono text-lg uppercase">generated with <b>OpenAI</b></div>
-						<div class="font-mono text-xs uppercase">(so don't take it seriously)</div>
-					</p>
+					<div class="mt-4">
+						<div class="font-mono text-lg uppercase">
+							generated with <b>OpenAI</b>
+						</div>
+						<div class="font-mono text-xs uppercase">
+							(so don't take it seriously)
+						</div>
+					</div>
 				</div>
 
 				<button
@@ -123,6 +127,19 @@
 				</label>
 			</div>
 		</template>
+
+		<script>
+			globalThis.appConfig = {
+				SERVER_URL: "http://your-default-backend-url",
+			};
+
+			if (
+				window.location.hostname !== "localhost" &&
+				window.location.hostname !== "127.0.0.1"
+			) {
+				globalThis.appConfig.SERVER_URL = "__SERVER_URL__";
+			}
+		</script>
 
 		<script type="module" src="/main.js"></script>
 	</body>

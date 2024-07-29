@@ -9,7 +9,7 @@ export default async function loadingSlide() {
 	await wait(2000);
 	jsConfetti.addConfetti({ emojis: ["💫"] });
 
-	const response = await fetch(__SERVER_URL_ENV__, {
+	const response = await fetch(globalThis.appConfig.SERVER_URL, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
