@@ -12,8 +12,8 @@ RUN npm run build
 FROM nginx:1.19.0
 COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+COPY entry.sh /entry.sh
+RUN chmod +x /entry.sh
 EXPOSE 80
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entry.sh"]
 CMD ["nginx", "-g", "daemon off;"]
