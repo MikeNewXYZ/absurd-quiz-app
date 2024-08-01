@@ -1,3 +1,5 @@
+*Note: If you want to build a new docker image in the client directory you have to recreate entry.sh file. I don't know why but docker returns "exec /entry.sh: no such file or directory" if you don't.*
+
 # Absurd Quiz App
 *A fun quiz app that generates quizzes on request with OpenAI.*
 
