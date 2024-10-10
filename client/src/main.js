@@ -6,6 +6,8 @@ import JSConfetti from "js-confetti";
 import nextSlide from "./lib/next-slide";
 import loadingSlide from "./slides/loading-slide";
 
+console.log(import.meta.env.VITE_SERVER_URL);
+
 const bodyEl = document.querySelector("body");
 const jsConfetti = new JSConfetti();
 

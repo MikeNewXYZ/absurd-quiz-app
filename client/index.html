@@ -128,19 +128,6 @@
 			</div>
 		</template>
 
-		<script>
-			globalThis.appConfig = {
-				SERVER_URL: "http://your-default-backend-url",
-			};
-
-			if (
-				window.location.hostname !== "localhost" &&
-				window.location.hostname !== "127.0.0.1"
-			) {
-				globalThis.appConfig.SERVER_URL = "__SERVER_URL__";
-			}
-		</script>
-
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="/src/main.js"></script>
 	</body>
 </html>
